@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Personal Blog</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f3f4f6;
+      margin: 0;
+    }
+
+    header {
+      background-color: #111827;
+      color: white;
+      padding: 30px;
+      text-align: center;
+    }
+
+    nav {
+      margin-top: 15px;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      width: 70%;
+      margin: 40px auto;
+    }
+
+    article {
+      background: white;
+      padding: 20px;
+      margin-bottom: 30px;
+      border-radius: 8px;
+    }
+
+    .blog-page {
+      display: none;
+      width: 70%;
+      margin: 40px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 8px;
+    }
+
+    h1, h2 {
+      color: #111827;
+    }
+
+    .date {
+      color: gray;
+      font-size: 14px;
+    }
+
+    a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+
+    :target {
+      display: block;
+    }
+
+    @media (max-width: 768px) {
+      main,
+      .blog-page {
+        width: 90%;
+      }
+
+      header h1 {
+        font-size: 24px;
+      }
+
+      nav a {
+        display: block;
+        margin: 8px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Susmita’s Blog</h1>
+    <p>Writing about different topics</p>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#blogs">Blogs</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <main id="blogs">
+    <article>
+      <h2>Why I Started Blogging</h2>
+      <p class="date">January 2026</p>
+      <p>A short introduction to my blogging journey.</p>
+      <a href="#blog1" class="read-more">Read more</a>
+    </article>
+
+    <article>
+      <h2>Learning Web Development from Scratch</h2>
+      <p class="date">January 2026</p>
+      <p>How I started learning website building with no coding knowledge.</p>
+      <a href="#blog2" class="read-more">Read more</a>
+    </article>
+  </main>
+
+  <!-- BLOG 1 FULL CONTENT -->
+  <section id="blog1" class="blog-page">
+    <h2>Why I Started Blogging</h2>
+    <p class="date">January 2026</p>
+    <p>I started blogging to share my thoughts, learn new things, and improve my writing skills. This blog is my personal space on the internet.</p>
+    <a href="#">← Back to Home</a>
+  </section>
+
+  <!-- BLOG 2 FULL CONTENT -->
+  <section id="blog2" class="blog-page">
+    <h2>Learning Web Development from Scratch</h2>
+    <p class="date">January 2026</p>
+    <p>I had zero coding knowledge, but I started learning step by step. This blog documents my learning journey and experiences.</p>
+    <a href="#">← Back to Home</a>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="blog-page">
+    <h2>About Me</h2>
+    <p>Hi, I’m Susmita. I write blogs on different topics and share my thoughts and learning experiences here.</p>
+    <a href="#">← Back to Home</a>
+  </section>
+
+</body>
+</html>
+
